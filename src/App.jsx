@@ -2,6 +2,8 @@ import './App.css'
 import UilReact from '@iconscout/react-unicons/icons/uil-react'
 import TopButtons from './components/TopButtons'
 import Inputs from './components/Inputs'
+import TimeLocation from './components/TimeLocation'
+import TemporeratureDetails from './components/TemporeratureDetails'
 
 function App() {
 
@@ -10,6 +12,9 @@ function App() {
 
       <TopButtons/>
       <Inputs/>
+
+      <TimeLocation/>
+      <TemporeratureDetails/>
 
     </div>
   )
