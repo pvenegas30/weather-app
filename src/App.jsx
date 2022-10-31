@@ -32,18 +32,18 @@ function App() {
 
     fetchWeather();
   }, [query, units]);
-
+  // bg-[url('./assets/heat.jpg')] bg-cover bg-center
   const formatBackground = () => {
-    if (!weather) return "bg-[url('./assets/forest.jpg)] bg-cover bg-center";
+    if (!weather) return "bg-[url('./assets/default.jpg')] bg-cover bg-center";
     const threshold = units === "metric" ? 20 : 60;
-    if (weather.temp <= threshold) return "bg-[url('./assets/forest.jpg)] bg-cover bg-center";
+    if (weather.temp <= threshold) return "bg-[url('./assets/default.jpg')] bg-cover bg-center";
 
-    return "from-yellow-700 to-orange-700";
+    return "bg-[url('./assets/heat.jpeg')] bg-cover bg-center";
   };
 
   return (
     <div
-      className={`mx-auto max-w-screen-md mt-4 py-5 px-32 bg-gradient-to-br  h-fit shadow-xl shadow-gray-400 ${formatBackground()}`}
+      className={`mx-auto max-w-screen-md mt-4 py-5 px-32 h-fit shadow-xl shadow-gray-400 ${formatBackground()}`}
     >
       <TopButtons setQuery={setQuery} />
       <Inputs setQuery={setQuery} units={units} setUnits={setUnits} />
