@@ -17,7 +17,7 @@ function Forecast({ title, items }) {
         lo que he hecho es simplemente agregar índice al bucle y
         atributo clave para el elemento div */}
 
-        {items.map((item) => (
+        {/* {items.map((item) => (
           <div className="flex flex-col items-center justify-center">
             <p className="font-light text-sm">{item.title}</p>
             <img
@@ -27,7 +27,7 @@ function Forecast({ title, items }) {
             />
             <p className="font-medium">{`${item.temp.toFixed()}°`}</p>
           </div>
-        ))}
+        ))} */}
 
         {items.map((item, index) => (
           <div
@@ -48,4 +48,4 @@ function Forecast({ title, items }) {
   );
 }
 
-export default Forecast;
+export default Forecast
