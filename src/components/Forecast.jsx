@@ -11,23 +11,6 @@ function Forecast({ title, items }) {
       <hr className="my-2" />
 
       <div className="flex flex-row items-center justify-between text-white">
-        {/* este codigo comentado es lo que enseño durante el video
-        le falta la clave y mostrará un error en la consola del navegador
-        así que usa el código de abajo
-        lo que he hecho es simplemente agregar índice al bucle y
-        atributo clave para el elemento div */}
-
-        {/* {items.map((item) => (
-          <div className="flex flex-col items-center justify-center">
-            <p className="font-light text-sm">{item.title}</p>
-            <img
-              src={iconUrlFromCode(item.icon)}
-              className="w-12 my-1"
-              alt=""
-            />
-            <p className="font-medium">{`${item.temp.toFixed()}°`}</p>
-          </div>
-        ))} */}
 
         {items.map((item, index) => (
           <div

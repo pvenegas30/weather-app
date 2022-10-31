@@ -31,8 +31,8 @@ function Inputs({ setQuery, units, setUnits }) {
   };
 
   return (
-    <div className="flex flex-row justify-center my-6">
-      <div className="flex flex-row w-3/4 items-center justify-center space-x-4">
+    <div className="flex flex-col justify-center my-6 w-full md:flex-row">
+      <div className="flex flex-row  items-center justify-center space-x-4 w-full">
         <input
           value={city}
           onChange={(e) => setCity(e.currentTarget.value)}
@@ -47,12 +47,12 @@ function Inputs({ setQuery, units, setUnits }) {
         />
         <UilLocationPoint
           size={25}
-          className="text-white cursor-pointer transition ease-out hover:scale-125"
+          className="text-white cursor-pointer transition ease-out hover:scale-125 hidden md:block"
           onClick={handleLocationClick}
         />
       </div>
 
-      <div className="flex flex-row w-1/4 items-center justify-center">
+      <div className="hidden flex-row w-1/4 items-center justify-center ml-20 mt-3 md:flex">
         <button
           name="metric"
           className="text-xl text-white font-light transition ease-out hover:scale-125"

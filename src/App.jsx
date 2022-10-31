@@ -47,7 +47,7 @@ function App() {
       <Inputs setQuery={setQuery} units={units} setUnits={setUnits} />
 
       <div className="flex items-center justify-center">
-        <a href="https://pedro-venegas-developer.netlify.app/inicio" title="Ir a portafolio" target="_blank" className="text-white border rounded-full py-1 px-3 hover:bg-cyan-900">Pedro Venegas ©2022</a>
+        <a href="https://pedro-venegas-developer.netlify.app/inicio" title="Ir a portafolio" target="_blank" className="text-white border rounded-full py-1 px-3 hover:bg-cyan-900 text-xs md:text-sm">Pedro Venegas ©2022</a>
       </div>
 
       {weather && (
