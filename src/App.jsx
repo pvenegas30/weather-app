@@ -42,11 +42,13 @@ function App() {
   };
 
   return (
-    <div
-      className={`mx-auto max-w-screen-md mt-4 py-5 px-32 h-fit shadow-xl shadow-gray-400 ${formatBackground()}`}
-    >
+    <div className={`mx-auto max-w-screen-md mt-4 py-5 px-32 h-fit shadow-xl shadow-gray-400 ${formatBackground()}`}>
       <TopButtons setQuery={setQuery} />
       <Inputs setQuery={setQuery} units={units} setUnits={setUnits} />
+
+      <div className="flex items-center justify-center">
+        <a href="https://pedro-venegas-developer.netlify.app/inicio" title="Ir a portafolio" target="_blank" className="text-white border rounded-full py-1 px-3 hover:bg-cyan-900">Pedro Venegas ©2022</a>
+      </div>
 
       {weather && (
         <div>
