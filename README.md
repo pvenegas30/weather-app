@@ -12,3 +12,18 @@ Fue realizado con los siguientes elementos y tecnologías:
 * LUXON.
 * ICONSCOUT.
 * OPENWEATHER API.
+
+ENGLISH
+
+You can see the complete project directly here: https://weather-app-pedro-venegas.netlify.app/
+
+This application is responsible for finding the current weather forecast and future days anywhere in the world. It was made with the following elements and technologies:
+
+* HTML.
+* TailWindCSS.
+* JS.
+* REACT.
+* REACT TOASTIFY.
+* LUXON.
+* ICONSCOUT.
+* OPENWEATHER API.
