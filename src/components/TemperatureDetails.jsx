@@ -26,14 +26,14 @@ function TemperatureAndDetails({
   return (
     <div>
       <div className="flex items-center justify-center py-5 text-white font-bold">
-        <p className="tracking-tight bg-black p-2 px-3.5 rounded-full">{details}</p>
+        <p className=" bg-black p-2 px-6 rounded-full tracking-[.25em] uppercase">{details}</p>
       </div>
 
       <div className="flex flex-row items-center justify-between text-white my-3 ">
         
-        <img src={iconUrlFromCode(icon)} alt="" className="w-20" />
-
-        <p className=" w-full h-full font-bold scale-100">{`${temp.toFixed()}°`}</p>
+        <img src={iconUrlFromCode(icon)} alt="" className="w-20 md:w-30" />
+        
+        <p className="w-80% font-bold scale-100 md:scale-150 md:ml-20">{`${temp.toFixed()}°`}</p>
 
         <div className="flex flex-col space-y-2 px-4">
           <div className="flex font-light text-sm items-center justify-center">

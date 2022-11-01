@@ -47,23 +47,24 @@ function Inputs({ setQuery, units, setUnits }) {
         />
         <UilLocationPoint
           size={27}
-          className="text-white cursor-pointer transition ease-out hover:scale-125 hidden md:block"
+          className="text-white cursor-pointer transition ease-out hover:scale-125"
           onClick={handleLocationClick}
-        />
+        ></UilLocationPoint>
+        <p className="text-white text-xxs font-semibold hidden md:block ">Current location</p>
       </div>
 
-      <div className="hidden flex-row w-1/4 items-center justify-center ml-20 mt-3 md:flex">
+      <div className="flex flex-row w-full items-center justify-center mt-6 mb-2 text-xl h-1/5 md:mt-3">
         <button
           name="metric"
-          className="text-xl text-white font-light transition ease-out hover:scale-125"
+          className=" text-white font-light transition ease-out scale-150 md:font-semibold hover:scale-175"
           onClick={handleUnitsChange}
         >
           °C
         </button>
-        <p className="text-xl text-white mx-1">|</p>
+        <p className="text-xl text-white mx-8 md:mx-4">|</p>
         <button
           name="imperial"
-          className="text-xl text-white font-light transition ease-out hover:scale-125"
+          className="text-xl text-white font-light transition ease-out scale-150 md:font-semibold hover:scale-175"
           onClick={handleUnitsChange}
         >
           °F

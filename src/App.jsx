@@ -42,12 +42,13 @@ function App() {
   };
 
   return (
-    <div className={`mx-auto w-full py-5 px-20 h-fit shadow-xl shadow-gray-400 md:mt-4 md:max-w-screen-md md:px-22 ${formatBackground()}`}>
+    <div className={`min-w-screen-full w-full py-5 px-20 h-full md:px-30 ${formatBackground()}`}>
+
       <TopButtons setQuery={setQuery} />
       <Inputs setQuery={setQuery} units={units} setUnits={setUnits} />
 
       <div className="flex items-center justify-center w-full">
-        <a href="https://pedro-venegas-developer.netlify.app/inicio" title="Ir a portafolio" target="_blank" className="text-white border rounded-full w-full py-1 px-3 hover:bg-cyan-900 text-xxs text-center md:text-sm md:text-xs md:w-2/4	">Pedro Venegas ©2022</a>
+        <a href="https://pedro-venegas-developer.netlify.app/inicio" title="Ir a portafolio" target="_blank" className="text-white border rounded-full w-full py-1 px-3 hover:bg-cyan-900 text-xxs text-center md:text-sm md:w-2/4 lg:w-1/4	">Pedro Venegas ©2022</a>
       </div>
 
       {weather && (
@@ -60,7 +61,7 @@ function App() {
         </div>
       )}
 
-      <ToastContainer autoClose={5000} theme="colored" newestOnTop={true} />
+      {/* <ToastContainer autoClose={5000} theme="colored" newestOnTop={true} /> */}
     </div>
   );
 }
