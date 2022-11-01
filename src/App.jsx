@@ -1,4 +1,5 @@
-import "./App.css";
+
+import "./roller.css";
 import TopButtons from "./components/TopButtons";
 import Inputs from "./components/Inputs";
 import TimeLocation from "./components/TimeLocation";
@@ -11,7 +12,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   
-  const [query, setQuery] = useState({ q: "berlin" });
+  const [query, setQuery] = useState({ q: "caracas" });
   const [units, setUnits] = useState("metric");
   const [weather, setWeather] = useState(null);
 
@@ -32,7 +33,7 @@ function App() {
 
     fetchWeather();
   }, [query, units]);
-  // bg-[url('./assets/heat.jpg')] bg-cover bg-center
+
   const formatBackground = () => {
     if (!weather) return "bg-[url('./assets/img/default.jpg')] bg-cover bg-center";
     const threshold = units === "metric" ? 20 : 60;
@@ -61,7 +62,8 @@ function App() {
         </div>
       )}
 
-      {/* <ToastContainer autoClose={5000} theme="colored" newestOnTop={true} /> */}
+      <ToastContainer className="foo text-xxs hidden md:block" style={{ width: "150px"}}  autoClose={3000} theme="colored" newestOnTop={true} />
+
     </div>
   );
 }

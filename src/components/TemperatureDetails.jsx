@@ -31,22 +31,22 @@ function TemperatureAndDetails({
 
       <div className="flex flex-row items-center justify-between text-white my-3 ">
         
-        <img src={iconUrlFromCode(icon)} alt="" className="w-20 md:w-30" />
+        <img src={iconUrlFromCode(icon)} alt="" className="w-20 md:w-30 md:scale-135 lg:scale-150" />
         
         <p className="w-80% font-bold scale-100 md:scale-150 md:ml-20">{`${temp.toFixed()}°`}</p>
 
         <div className="flex flex-col space-y-2 px-4">
-          <div className="flex font-light text-sm items-center justify-center">
+          <div className="flex font-light text-sm items-center justify-center md:text-xl">
             <UilTemperature size={18} className="mr-1" />
             Real fell:
             <span className="font-medium ml-1">{`${feels_like.toFixed()}°`}</span>
           </div>
-          <div className="flex font-light text-sm items-center justify-center">
+          <div className="flex font-light text-sm items-center justify-center md:text-xl">
             <UilTear size={18} className="mr-1" />
             Humidity:
             <span className="font-medium ml-1">{`${humidity.toFixed()}%`}</span>
           </div>
-          <div className="flex font-light text-sm items-center justify-center">
+          <div className="flex font-light text-sm items-center justify-center md:text-xl">
             <UilWind size={18} className="mr-1" />
             Wind:
             <span className="font-medium ml-1">{`${speed.toFixed()} km/h`}</span>

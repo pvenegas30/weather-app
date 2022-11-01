@@ -41,16 +41,16 @@ function Inputs({ setQuery, units, setUnits }) {
           className="text-xl font-light p-2 pl-4 w-full rounded-l-full shadow-xl focus:outline-none capitalize placeholder:lowercase"
         />
         <UilSearch
-          size={27}
-          className="text-white cursor-pointer transition ease-out hover:scale-125"
+          size={35}
+          className="text-white cursor-pointer transition ease-out hover:scale-135"
           onClick={handleSearchClick}
         />
         <UilLocationPoint
-          size={27}
-          className="text-white cursor-pointer transition ease-out hover:scale-125"
+          size={35}
+          className="text-white cursor-pointer transition ease-out hover:scale-135"
           onClick={handleLocationClick}
         ></UilLocationPoint>
-        <p className="text-white text-xxs font-semibold hidden md:block ">Current location</p>
+        <p className="text-white text-xxs font-semibold hidden md:block ">Current Location</p>
       </div>
 
       <div className="flex flex-row w-full items-center justify-center mt-6 mb-2 text-xl h-1/5 md:mt-3">
