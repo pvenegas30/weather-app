@@ -25,13 +25,16 @@ function TemperatureAndDetails({
 }) {
   return (
     <div>
-      <div className="flex items-center justify-center py-6 text-xl text-white font-bold">
+      <div className="flex items-center justify-center py-5 text-white font-bold">
         <p className="tracking-tight bg-black p-2 px-3.5 rounded-full">{details}</p>
       </div>
 
-      <div className="flex flex-row items-center justify-between text-white py-3">
+      <div className="flex flex-row items-center justify-between text-white my-3 ">
+        
         <img src={iconUrlFromCode(icon)} alt="" className="w-20" />
-        <p className="text-5xl">{`${temp.toFixed()}°`}</p>
+
+        <p className=" w-full h-full font-bold scale-100">{`${temp.toFixed()}°`}</p>
+
         <div className="flex flex-col space-y-2 px-4">
           <div className="flex font-light text-sm items-center justify-center">
             <UilTemperature size={18} className="mr-1" />
@@ -51,36 +54,36 @@ function TemperatureAndDetails({
         </div>
       </div>
 
-      <div className="flex flex-row items-center justify-center space-x-2 text-white text-sm py-3">
-        <UilSun />
-        <p className="font-light">
+      <div className="flex flex-col items-center justify-center space-x-2 text-white text-sm py-3 md:flex-row">
+        <UilSun  size={50} className="mb-4 md:mb-0"/>
+        <p className="font-light text-xs">
           Rise:{" "}
-          <span className="font-medium ml-1">
+          <span className="font-medium">
             {formatToLocalTime(sunrise, timezone, "hh:mm a")}
           </span>
         </p>
-        <p className="font-light">|</p>
+        <p className="font-light hidden md:block">|</p>
 
-        <UilSunset />
+        <UilSunset size={50} className="mb-4 md:mb-0"/>
         <p className="font-light">
           Set:{" "}
-          <span className="font-medium ml-1">
+          <span className="font-medium">
             {formatToLocalTime(sunset, timezone, "hh:mm a")}
           </span>
         </p>
-        <p className="font-light">|</p>
+        <p className="font-light hidden md:block">|</p>
 
-        <UilSun />
+        <UilSun size={50} className="mb-4 md:mb-0"/>
         <p className="font-light">
           High:{" "}
-          <span className="font-medium ml-1">{`${temp_max.toFixed()}°`}</span>
+          <span className="font-medium">{`${temp_max.toFixed()}°`}</span>
         </p>
-        <p className="font-light">|</p>
+        <p className="font-light hidden md:block">|</p>
 
-        <UilSun />
+        <UilSun size={50} className="mb-4 md:mb-0"/>
         <p className="font-light">
           Low:{" "}
-          <span className="font-medium ml-1">{`${temp_min.toFixed()}°`}</span>
+          <span className="font-medium">{`${temp_min.toFixed()}°`}</span>
         </p>
       </div>
     </div>

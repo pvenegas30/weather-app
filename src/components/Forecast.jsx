@@ -5,8 +5,8 @@ function Forecast({ title, items }) {
   console.log(items);
   return (
     <div>
-      <div className="flex items-center justify-start mt-6">
-        <p className="text-white font-medium uppercase">{title}</p>
+      <div className="flex items-center justify-center mt-6 md:justify-start">
+        <p className="text-white font-medium uppercase ">{title}</p>
       </div>
       <hr className="my-2" />
 

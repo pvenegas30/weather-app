@@ -15,7 +15,11 @@ module.exports = {
       'lg': '1024px',
       // => @media (min-width: 1024px) { ... }
 
+    },
+    fontSize: {
+      xxs: '10px'
     }
   },
   plugins: [],
 }
+

@@ -41,12 +41,12 @@ function Inputs({ setQuery, units, setUnits }) {
           className="text-xl font-light p-2 pl-4 w-full rounded-l-full shadow-xl focus:outline-none capitalize placeholder:lowercase"
         />
         <UilSearch
-          size={25}
+          size={27}
           className="text-white cursor-pointer transition ease-out hover:scale-125"
           onClick={handleSearchClick}
         />
         <UilLocationPoint
-          size={25}
+          size={27}
           className="text-white cursor-pointer transition ease-out hover:scale-125 hidden md:block"
           onClick={handleLocationClick}
         />

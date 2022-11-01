@@ -5,11 +5,11 @@ function TopButtons({setQuery}) {
     const cities = [
         {
             id: 1,
-            title:"London"
+            title:"Caracas"
         },
         {
             id: 2,
-            title:"Sydney"
+            title:"London"
         },
         {
             id: 3,
@@ -17,7 +17,7 @@ function TopButtons({setQuery}) {
         },
         {
             id: 4,
-            title:"Toronto"
+            title:"Oslo"
         },
         {
             id: 5,
